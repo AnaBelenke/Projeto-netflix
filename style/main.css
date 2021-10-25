@@ -10,7 +10,9 @@
 }
 
 /*Elementos basicos*/
-
+.container {
+    margin-left: 20px;
+}
 body{
     background-color: var(--preto);
     font-family: 'Times New Roman', Times, serif;
@@ -22,13 +24,29 @@ header .container{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    font-size: 18px;
 }
 
 header .logo{
     margin-left: 5px;
-    color: var(--vermelho);
     font-family: 'Arial Black', times;
     font-size: 40px;
+}
+.Rainbow {
+    background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  
+  background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  
+  color:transparent;
+  
+  border: none;
+  
+  -webkit-background-clip: text;
+  
+  background-clip: text;
+  
+
+  
 }
 
 header nav a{
@@ -46,8 +64,8 @@ header nav a:hover{
 .filme-principal{
     font-size: 16px;
     background: linear-gradient(rgba(0,0,0,.50),rgba(0, 0, 0,.50)100%), url("/img/capa.jpg");
-
-    height: 400px;
+    background-image: url("/img/capa.jpg");
+    height: 500px;
     background-size:cover;
 
     display: flex;
@@ -56,13 +74,13 @@ header nav a:hover{
     align-items: flex-start;
 }
 .filme-principal .descricao{
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 40px;
 
 }
 
 .titulo{
-    margin-top: 20%;
+    margin-top: 10%;
     font-size: 40px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -72,10 +90,10 @@ header nav a:hover{
     border: none;
     color: #FFF;
 
-    padding: 15px;
+    padding: 15px 30px;
     margin-right: 15px;
     font-size: 12px;
-
+    
     cursor: pointer; 
     transition: .5s ease all; 
 }
@@ -87,5 +105,12 @@ header nav a:hover{
 
 .botao i {
    margin-right: 10px;
+}
+
+.box-filme{
+    height: 400px;
+    width: 200px;
+    display: block;
+    margin: 5px;
 }
 
